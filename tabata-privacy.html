@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tabata App — Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the Tabata App iOS application." />
+    <style>
+        :root {
+            --bg:        #0e0f12;
+            --surface:   #16181d;
+            --text:      #f5f6f8;
+            --muted:     #a4a8b3;
+            --accent:    #34c759;
+            --rule:      #25282f;
+            --maxw:      720px;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg:      #ffffff;
+                --surface: #f7f8fa;
+                --text:    #14151a;
+                --muted:   #545863;
+                --rule:    #e5e7eb;
+            }
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        main {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 56px 24px 96px;
+        }
+        header {
+            margin-bottom: 32px;
+        }
+        h1 {
+            margin: 0 0 6px 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 15px;
+        }
+        h2 {
+            margin: 40px 0 8px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        p, li {
+            color: var(--text);
+        }
+        p {
+            margin: 8px 0 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 6px 0 12px;
+        }
+        li { margin-bottom: 6px; }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--rule);
+            margin: 32px 0;
+        }
+        .card {
+            background: var(--surface);
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 14px 0;
+        }
+        footer {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 56px;
+        }
+        code {
+            background: var(--surface);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Tabata App — last updated <time datetime="2026-04-25">25 April 2026</time></div>
+    </header>
+
+    <p>
+        Tabata App ("the app") is an iOS interval-timer application
+        developed by Jakob Eilts ("the developer"). This document explains
+        what data the app handles and how it is stored. The app is
+        designed to collect as little information as possible.
+    </p>
+
+    <h2>Summary</h2>
+    <div class="card">
+        <ul>
+            <li>The app does <strong>not</strong> collect, transmit, or
+                sell any personal data.</li>
+            <li>The app does <strong>not</strong> use any third-party
+                analytics, advertising, or tracking SDKs.</li>
+            <li>The app does <strong>not</strong> require an account and
+                does <strong>not</strong> ask for your email, name, or
+                any other identifier.</li>
+            <li>Workouts you create are stored on your device and,
+                optionally, in your own private iCloud account.</li>
+        </ul>
+    </div>
+
+    <h2>What the app stores</h2>
+    <p>
+        The app stores the workouts you create — their name, icon, work
+        and rest durations, number of rounds, and any custom labels. This
+        data lives in two places:
+    </p>
+    <ul>
+        <li>
+            <strong>On your device.</strong> Workouts are saved to a
+            JSON file inside the app's sandboxed Application Support
+            directory. Only the app can read this file. Deleting the app
+            permanently removes it.
+        </li>
+        <li>
+            <strong>In your private iCloud database (optional).</strong>
+            If you are signed in to iCloud and CloudKit is enabled in the
+            app, workouts are also synced to your <em>private</em>
+            CloudKit container. Apple manages this storage and applies
+            its standard iCloud privacy and security protections. The
+            developer cannot access this data; it is tied to your Apple
+            ID. See
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>
+            for details on how Apple handles iCloud data.
+        </li>
+    </ul>
+
+    <h2>What the app does <em>not</em> do</h2>
+    <ul>
+        <li>It does not contact any server controlled by the developer.</li>
+        <li>It does not include analytics, crash reporting, or
+            advertising frameworks.</li>
+        <li>It does not request access to your contacts, photos,
+            location, microphone, or health data.</li>
+        <li>It does not read or modify any files outside its own
+            sandbox.</li>
+    </ul>
+
+    <h2>Audio</h2>
+    <p>
+        The app plays short beeps during workouts. It uses the
+        <code>AVAudioSession</code> "playback / mix with others" mode,
+        which means it will play alongside any music or podcast you are
+        already listening to without stopping or ducking that audio. No
+        microphone access is requested.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+        The app is suitable for general audiences and does not knowingly
+        collect any data from children under 13 (or the equivalent
+        minimum age in your jurisdiction). Because no personal data is
+        collected at all, no age-based data handling is required.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+        <li>To stop using iCloud sync, sign out of iCloud or disable
+            iCloud Drive for the app in <em>Settings → [your name] →
+            iCloud</em>.</li>
+        <li>To remove all workouts, delete the app. This removes the
+            local cache. Workouts in your private iCloud database can be
+            removed via <em>Settings → [your name] → iCloud → Manage
+            Account Storage</em>.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>
+        If this policy changes in a meaningful way, the updated version
+        will be posted at the same URL where you are reading this
+        document, with a new "last updated" date.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+        Questions about this policy or the app can be sent to
+        <a href="mailto:jakobeilts@web.de">jakobeilts@web.de</a>. If you
+        require the developer's postal address (for example, to file a
+        formal request under data-protection law), please email the
+        address above and it will be provided to you in writing.
+    </p>
+
+    <hr />
+    <footer>
+        &copy; 2026 Jakob Eilts. This policy is provided in plain
+        English; it is not legal advice.
+    </footer>
+</main>
+</body>
+</html>
